@@ -6,7 +6,7 @@
  *
  * prints string using puts
  *
- * /
+ */
 
 int main(void)
 {
