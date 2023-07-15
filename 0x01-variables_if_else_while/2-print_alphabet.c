@@ -9,8 +9,10 @@
 int main(void)
 {
 	int ch;
+	char space = "\n";
 
 	for (ch = 97; ch < 123; ch++)
 		putchar(ch);
+	putchar(space);
 	return (0);
 }
