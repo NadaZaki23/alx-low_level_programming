@@ -16,6 +16,10 @@ int main(void)
 		{
 			for (m = i; m < 58; m++)
 			{
+				if (m == i)
+					n = j +1;
+				else
+					n = 48;
 				for (n = j + 1; n < 58; n++)
 				{
 					putchar(i);
@@ -28,7 +32,6 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-				n = 48;
 			}
 		}
 	}
