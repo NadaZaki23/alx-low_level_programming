@@ -17,10 +17,10 @@ int main(void)
 			for (m = i; m < 58; m++)
 			{
 				if (m == i)
-					n = j +1;
+					n = j + 1;
 				else
 					n = 48;
-				for (n = j + 1; n < 58; n++)
+				for (; n < 58; n++)
 				{
 					putchar(i);
 					putchar(j);
