@@ -2,19 +2,16 @@
 
 /**
  * _islower - checks for lowercase character
+ * 
+ * @c: the character to check
  *
- * Return: 1 (True)
- *
- * Return: 0 (False)
+ * Return: 1 (True) | 0 (False)
  */
 
 int _islower(int c)
 {
-	int i;
-
 	if (c > 96 && c < 123)
-		i = 1;
+		return (1);
 	else
-		i = 0;
-	return (i);
+		return (0);
 }
