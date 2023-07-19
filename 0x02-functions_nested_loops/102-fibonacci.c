@@ -25,7 +25,7 @@ int main(void)
 		f1 = fn;
 		if (count == 49)
 		{
-			printf("%ld", fn);
+			printf("%ld\n", fn);
 		}
 		else
 		{
