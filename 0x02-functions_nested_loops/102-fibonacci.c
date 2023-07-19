@@ -9,12 +9,17 @@
 int main(void)
 {
 	long f0 = 1;
-	long f1 = 2;
+	long f1 = 1;
 	long fn;
 	int count;
 
 	for (count = 0; count < 50; count++)
 	{
+		if (count == 0)
+		{
+			printf("ld\n", f1);
+			continue;
+		}
 		fn = f0 + f1;
 		f0 = f1;
 		f1 = fn;
