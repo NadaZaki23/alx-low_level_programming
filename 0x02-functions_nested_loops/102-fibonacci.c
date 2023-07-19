@@ -23,7 +23,7 @@ int main(void)
 		fn = f0 + f1;
 		f0 = f1;
 		f1 = fn;
-		if(count == 50)
+		if (count == 49)
 		{
 			printf("%ld", fn);
 		}
