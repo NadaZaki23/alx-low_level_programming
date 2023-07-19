@@ -17,7 +17,7 @@ int main(void)
 	{
 		if (count == 0)
 		{
-			printf("%ld\n", f1);
+			printf("%ld, ", f1);
 			continue;
 		}
 		fn = f0 + f1;
