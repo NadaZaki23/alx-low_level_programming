@@ -13,7 +13,7 @@ int main(void)
 	long fn;
 	int count;
 
-	for (count = 0; count < 93; count++)
+	for (count = 0; count < 91; count++)
 	{
 		if (count == 0)
 		{
