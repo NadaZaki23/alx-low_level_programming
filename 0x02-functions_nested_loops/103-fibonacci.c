@@ -13,7 +13,7 @@ int main(void)
 	long f1 = 1;
 	long fn;
 
-	while (b < 4000000)
+	while (f1 < 4000000)
 	{
 		fn = f0 + f1;
 		f0 = f1;
