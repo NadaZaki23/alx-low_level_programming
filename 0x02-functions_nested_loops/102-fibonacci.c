@@ -12,7 +12,7 @@ int main(void)
 	int f1 = 1;
 	int fn, count;
 
-	for (count = 0; count < 50; count++)
+	for (count = 0; count < 48; count++)
 	{
 		if (count == 0)
 		{
