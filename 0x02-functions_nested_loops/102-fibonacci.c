@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	int f0 = 0;
+	int f0 = 1;
 	int f1 = 1;
 	int fn, count;
 
