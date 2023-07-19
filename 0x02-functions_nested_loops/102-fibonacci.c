@@ -23,7 +23,14 @@ int main(void)
 		fn = f0 + f1;
 		f0 = f1;
 		f1 = fn;
-		printf("%ld, ", fn);
+		if(count == 50)
+		{
+			printf("%ld", fn);
+		}
+		else
+		{
+			printf("%ld, ", fn);
+		}
 	}
 	return (0);
 }
