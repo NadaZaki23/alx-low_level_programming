@@ -17,13 +17,13 @@ int main(void)
 	{
 		if (count == 0)
 		{
-			printf("%d, ", f1);
+			printf("%ld, ", f1);
 			continue;
 		}
 		fn = f0 + f1;
 		f0 = f1;
 		f1 = fn;
-		printf("%d, ", fn);
+		printf("%ld, ", fn);
 	}
 	return (0);
 }
