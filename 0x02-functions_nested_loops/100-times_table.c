@@ -2,6 +2,7 @@
 
 /**
  * print_times_table - prints the n times table
+ * @n: function input
  */
 
 void print_times_table(int n)
