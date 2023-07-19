@@ -2,8 +2,6 @@
 
 /**
  * jack_bauer - prints every minute from 00:00 to 23:59
- * @hour: count for hours
- * @min: count for mins
  */
 
 void jack_bauer(void)
@@ -20,7 +18,6 @@ void jack_bauer(void)
 			_putchar('0' + (min / 10));
 			_putchar('0' + (min % 10));
 			_putchar('\n');
-			min++;
 		}
 	}
 }
