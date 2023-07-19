@@ -8,11 +8,12 @@
 
 int main(void)
 {
-	int f0 = 1;
-	int f1 = 1;
-	int fn, count;
+	long f0 = 1;
+	long f1 = 1;
+	long fn;
+	int count;
 
-	for (count = 0; count < 48; count++)
+	for (count = 0; count < 50; count++)
 	{
 		if (count == 0)
 		{
