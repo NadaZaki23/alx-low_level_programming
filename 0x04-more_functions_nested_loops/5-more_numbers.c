@@ -10,12 +10,18 @@ void more_numbers(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		for (j = 48; j < 58; j++)
-			_putchar(j);
-		for (k = '0'; k < '5'; k++)
+		k = 48;
+		for (j = 0; j < 15; j++)
 		{
-			_putchar(49);
-			_putchar(k);
+			if (j > 9)
+			{
+				_putchar(49);
+			}
+			if (j == 10)
+			{
+				k = 48;
+			}
+			_putchar(k++);
 		}
 		_putchar('\n');
 	}
