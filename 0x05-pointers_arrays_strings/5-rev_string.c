@@ -8,7 +8,8 @@
 
 void rev_string(char *s)
 {
-	int i, length, cpy;
+	int i, length;
+	char cpy;
 
 	length = strlen(s);
 
@@ -16,6 +17,6 @@ void rev_string(char *s)
 	{
 		cpy = s[i];
 		s[i] = s[length - i - 1];
-		s[length - i - 1] = temp;
+		s[length - i - 1] = cpy;
 	}
 }
