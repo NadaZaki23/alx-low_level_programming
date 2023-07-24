@@ -8,30 +8,27 @@
 
 void rev_string(char *s)
 {
-	char *head1, *head2, *cpy;
-	int size = 0;
+	int length = 0, i = 0;
+	char *head = s;
 
-	head1 = s;
 	while (1)
 	{
 		if (*s == '\0')
 			break;
-		size += 1;
+		length += 1;
 		s += 1;
 	}
-	cpy = malloc(size + 1);
-	head2 = cpy;
-	s -= 1;
-	for (; s >= head1; s--)
+
+	char cpy[length];
+
+	for (; s >= head; s--)
 	{
-		*cpy = *s;
-		cpy += 1;
+		cpy[i] = *s;
+		i++;
 	}
-	cpy -= 1;
-	for (; cpy >= head2; cpy--)
+	cpy[i] = '\0';
+	for (i = 0; i < length; i++)
 	{
-		*s = *cpy;
-		s += 1;
+		*s = cpy[i];
 	}
-	*s = '\0';
 }
