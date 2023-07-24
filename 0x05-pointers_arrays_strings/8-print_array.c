@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * print_array - prints n elements of an array of integers
@@ -8,12 +9,15 @@
 
 void print_array(int *a, int n)
 {
-	int i;
+	int i, j;
 
 	for (i = 0; i < n; i++)
 	{
-		_putchar(a[i]);
-		if (i == n)
+		for (j = 0; j < strlen(a[i]); j++)
+		{
+			_putchar(a[i][j] + '0');
+		}
+		if (i == n - 1)
 			break;
 		_putchar(',');
 		_putchar(' ');
