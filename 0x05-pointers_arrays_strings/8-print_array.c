@@ -9,13 +9,15 @@
 
 void print_array(int *a, int n)
 {
-	int i, j;
+	int i, temp
 
 	for (i = 0; i < n; i++)
 	{
-		for (j = 0; j < strlen(a[i]); j++)
+		temp = a[i]
+		while (temp / 10)
 		{
-			_putchar(a[i][j] + '0');
+			_putchar(temp % 10 + '0');
+			temp = temp / 10;
 		}
 		if (i == n - 1)
 			break;
