@@ -16,7 +16,8 @@ void puts2(char *str)
 		if (i % 2 == 1)
 			continue;
 		_putchar(*str);
-		str += 1;
+		str++;
+		i++;
 	}
 	_putchar('\n');
 }
