@@ -11,7 +11,7 @@ void puts2(char *str)
 
 	while (1)
 	{
-		if (*str == '\0)
+		if (*str == '\0')
 			break;
 		if (i % 2 == 1)
 			continue;
