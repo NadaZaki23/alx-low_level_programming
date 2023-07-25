@@ -24,11 +24,11 @@ int _atoi(char *s)
 			negative = 0;
 		}
 		digit = s[i] - '0';
+		if (negative == 1)
+			digit = -digit;
 		number = number * 10 + digit;
 		if (s[i + 1] < '0' || s[i + 1] > '9')
 			break;
 	}
-	if (negative == 1)
-		number = -number;
 	return (number);
 }
