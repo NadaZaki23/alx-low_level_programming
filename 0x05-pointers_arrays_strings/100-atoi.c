@@ -29,6 +29,6 @@ int _atoi(char *s)
 			break;
 	}
 	if (negative == 1)
-		number = number * -1;
+		number = -number;
 	return (number);
 }
