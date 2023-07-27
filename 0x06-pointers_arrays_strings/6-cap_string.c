@@ -10,8 +10,8 @@ char *cap_string(char *s)
 {
 	int i, sep = 0;
 
-	if (s[0] >= 65 && s[0] <= 90)
-		s[0] = s[0] + 32;
+	if (s[0] >= 97 && s[0] <= 122)
+		s[0] = s[0] - 32;
 
 	for (i = 1; s[i] != '\0'; i++)
 	{
@@ -23,9 +23,9 @@ char *cap_string(char *s)
 			sep = 1;
 		}
 
-		if (sep == 1 && s[i] >= 65 && s[i] <= 90)
+		if (sep == 1 && s[i] >= 97 && s[i] <= 122)
 		{
-			s[i] = s[i] + 32;
+			s[i] = s[i] - 32;
 			sep = 0;
 		}
 	}
