@@ -2,10 +2,10 @@
 
 /**
  * _strncat - concatenates two strings
- * @src: string to be appended
- * @dest: string to be appended to
- * @n: bytes used from src
- * Return: pointer to restulting string dest
+ * @src: the string to be appended
+ * @dest: the string to be appended to
+ * @n: most n bytes used form src
+ * Return: a pointer to the resulting string dest
  */
 
 char *_strncat(char *dest, char *src, int n)
@@ -13,14 +13,16 @@ char *_strncat(char *dest, char *src, int n)
 	int i, j;
 
 	i = 0;
-	while (dest[i++] != '\0')
-		;
-
-	for (j = 0; j < n; j++)
+	while (dest[i] != '\0')
 	{
-		dest[i++] = src[j];
+		i++;
 	}
 
+	j = 0;
+	while (src[j] != src[n])
+	{
+		dest[i++] = src[j++];
+	}
 	dest[i] = '\0';
 	return (dest);
 }
