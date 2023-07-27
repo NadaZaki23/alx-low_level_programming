@@ -23,13 +23,9 @@ int _strcmp(char *s1, char *s2)
 	{
 		result = 0;
 	}
-	else if (s1[i] == '\0')
-	{
-		result = -1;
-	}
 	else
 	{
-		result = 1;
+		result = s1[i] - s2[j];
 	}
 	return (result);
 }
