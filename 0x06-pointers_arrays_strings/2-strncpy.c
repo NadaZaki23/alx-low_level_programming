@@ -17,11 +17,11 @@ char *_strncpy(char *dest, char *src, int n)
 	/* dest = malloc(n + 1); */
 	i = 0;
 	j = 0;
-	while (src[j] != '\0')
+	while (src[j] != '\0' && j < n)
 	{
 		dest[i++] = src[j++];
 	}
-	for (; i <= n; i++)
+	for (; i < n; i++)
 	{
 		dest[i] = '\0';
 	}
