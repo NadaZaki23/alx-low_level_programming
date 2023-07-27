@@ -4,12 +4,12 @@
  * _strcmp - compares two strings
  * @s1: frist string
  * @s2: second string
- * Return: result: -1 (s1 < s2) | 0 (s1 == s2) | 1 (s1 > s2)
+ * Return: difference(diff): -ve (s1 < s2) | 0 (s1 == s2) | +ve (s1 > s2)
  */
 
 int _strcmp(char *s1, char *s2)
 {
-	int i, j, result;
+	int i, j, diff;
 
 	i = 0;
 	j = 0;
@@ -21,11 +21,11 @@ int _strcmp(char *s1, char *s2)
 
 	if (s1[i] == '\0' && s2[j] == '\0')
 	{
-		result = 0;
+		diff = 0;
 	}
 	else
 	{
-		result = s1[i] - s2[j];
+		diff = s1[i] - s2[j];
 	}
 	return (result);
 }
