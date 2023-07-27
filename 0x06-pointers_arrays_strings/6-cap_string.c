@@ -25,7 +25,7 @@ char *cap_string(char *s)
 
 		if (sep == 1 && s[i] >= 65 && s[i] <= 90)
 		{
-			s[i] == s[i] + 32;
+			s[i] = s[i] + 32;
 			sep = 0;
 		}
 	}
