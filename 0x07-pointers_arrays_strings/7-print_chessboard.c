@@ -2,7 +2,7 @@
 
 /**
  * print_chessborad - prints the chessboard
- * @a: 8x8 array
+ * @a: 8x8 array (2D array)
  */
 
 void print_chessboard(char (*a)[8])
