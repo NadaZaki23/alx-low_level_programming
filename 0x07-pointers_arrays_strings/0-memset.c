@@ -11,7 +11,7 @@
 char *_memset(char *s, char b, unsigned int n)
 {
 	int i;
-	int num = n;
+	int num = n;/*comparison of integer expressions of different signedness*/
 
 	for (i = 0; i < num; i++)
 	{
