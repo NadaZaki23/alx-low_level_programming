@@ -14,10 +14,17 @@ int main(int argc, char *argv[])
 {
 	int remain, coins = 0;
 
+	/*if nummber of arguments passed is not exactly 1*/
 	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
+	}
+	/*if numbber passed is -ve*/
+	if (argv[1] < 0)
+	{
+		printf("0\n");
+		return (0);
 	}
 	remain = atoi(argv[1]);
 	coins += remain / 25;
