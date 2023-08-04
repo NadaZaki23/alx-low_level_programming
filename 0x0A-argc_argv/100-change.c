@@ -20,13 +20,13 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+	remain = atoi(argv[1]);
 	/*if numbber passed is -ve*/
-	if (argv[1] < 0)
+	if (remain < 0)
 	{
 		printf("0\n");
 		return (0);
 	}
-	remain = atoi(argv[1]);
 	coins += remain / 25;
 	remain %= 25;
 	coins += remain / 10;
