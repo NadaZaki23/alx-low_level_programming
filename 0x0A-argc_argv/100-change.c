@@ -6,8 +6,8 @@
  *      - can use unlimited number of coins of values 25, 10, 5, 2 and 1 cen
  * @argc: number of command line arguments
  * @argv: array containing command line arguments
- * Returns: 0 (success)
- *        : 1 (fail) if arguments passed is not exactly 1
+ * Return: 0 (success)
+ *       : 1 (fail) if arguments passed is not exactly 1
  */
 
 int main(int argc, char *argv[])
