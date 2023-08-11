@@ -21,7 +21,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s2 == NULL)
 		s2 = "";
 	if (n_int < 0)
-		return *(NULL);
+		return (NULL);
 	for (i = 0; s2[i] != '\0'; i++)
 		;
 	len2 = i;
