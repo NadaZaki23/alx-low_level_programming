@@ -5,6 +5,7 @@
  * @head: pointer of current head
  * @str: string - value of str in node
  * Return: address of new element or NULL if it failed
+ * free both value and newNode if strdup returned NULL
  */
 
 list_t *add_node(list_t **head, const char *str)
